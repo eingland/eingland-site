@@ -8,8 +8,10 @@ tags:
   - NTFS
 ---
 
-Uses NTFSSecurity Module available from https://gallery.technet.microsoft.com/scriptcenter/1abd77a5-9c0b-4a2b-acef-90dbb2b84e85
+Uses NTFSSecurity Module available from https://ntfssecurity.readthedocs.io/en/latest/
 
 ### **Add NTFS Permissions to Subfolder**
 
-{{< gist eingland 186da9af5f2ab6bef0426f495e31ff22 >}}
+```
+Get-ChildItem -Directory | Add-NTFSAccess -Account 'NT AUTHORITY\Authenticated Users' -AccessRights Read
+```

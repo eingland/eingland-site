@@ -19,8 +19,11 @@ I replaced my keyboard a couple of weeks ago to one without media keys and had a
 
 This script works the same as the Volume Mute, Volume Down and Volume Up keys on a media keyboard.
 
-
-{{< gist eingland 12fa9e55110b981f06c8d0e58eaa8c2b >}}
+```
+^F10::Volume_Down
+^F11::Volume_Up
+^F12::Volume_Mute
+```
 
 ## How to Use
 
