@@ -18,6 +18,7 @@ export default function Post({
     <Layout>
       <Head>
         <title>{postData.title}</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-coy-without-shadows.min.css" rel="stylesheet" />
       </Head>
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>

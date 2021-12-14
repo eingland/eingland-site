@@ -12,6 +12,6 @@ Uses NTFSSecurity Module available from https://ntfssecurity.readthedocs.io/en/l
 
 ### **Add NTFS Permissions to Subfolder**
 
-```
+```powershell
 Get-ChildItem -Directory | Add-NTFSAccess -Account 'NT AUTHORITY\Authenticated Users' -AccessRights Read
 ```

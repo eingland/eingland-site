@@ -22,7 +22,7 @@ export default function Home({
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-      <h1>Hi, I'm Eric Ingland!</h1>
+      <h1>👋 Hi, I'm Eric Ingland!</h1>
         <p>I'm a <b>DevOps Engineer</b>.
               I love all things computer science.
               Please have a look at my projects on <a href="http://github.com/eingland">Github</a>.</p>
