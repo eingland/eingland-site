@@ -4,8 +4,15 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+library.add(fab, faEnvelope)
+
 const name = 'Eric Ingland'
-export const siteTitle = 'Next.js Sample Website'
+export const siteTitle = 'Eric Ingland Website'
 
 export default function Layout({ children, home }) {
   return (

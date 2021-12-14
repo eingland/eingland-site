@@ -3,6 +3,8 @@ import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Date from '../components/date'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 import { getSortedPostsData } from '../lib/posts'
 
@@ -28,6 +30,28 @@ export default function Home ({ allPostsData }) {
               I love all things computer science.
               Please have a look at my projects on <a href="http://github.com/eingland">Github</a>.</p>
         <p>Contact me at <a href="http://twitter.com/ericingland">@ericingland</a> or by <a href="mailto:ingland.eric@gmail.com">email</a>.</p>
+        <ul style={{ display: 'flex', flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+          <li className="nav-link">
+            <a href="http://github.com/eingland">
+              <FontAwesomeIcon icon={['fab', 'github']} style={{ color: '#000000' }} />
+            </a>
+          </li>
+          <li className="nav-link">
+            <a href="mailto:ingland.eric@gmail.com">
+              <FontAwesomeIcon icon="envelope" style={{ color: '#000000' }} />
+            </a>
+          </li>
+          <li className="nav-link">
+            <a href="http://twitter.com/ericingland">
+              <FontAwesomeIcon icon={['fab', 'twitter']} style={{ color: '#000000' }} />
+            </a>
+          </li>
+          <li className="nav-link">
+            <a href="http://linkedin.com/in/ericingland">
+              <FontAwesomeIcon icon={['fab', 'linkedin']} style={{ color: '#000000' }} />
+            </a>
+          </li>
+        </ul>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
