@@ -34,18 +34,13 @@ export default function Home({
             </a>
           </li>
           <li className="nav-link">
-            <a href="mailto:ingland.eric@gmail.com">
-              <FontAwesomeIcon icon="envelope" style={{ color: '#000000' }} />
-            </a>
-          </li>
-          <li className="nav-link">
-            <a href="http://twitter.com/ericingland">
-              <FontAwesomeIcon icon={['fab', 'twitter']} style={{ color: '#000000' }} />
-            </a>
-          </li>
-          <li className="nav-link">
             <a href="http://linkedin.com/in/ericingland">
               <FontAwesomeIcon icon={['fab', 'linkedin']} style={{ color: '#000000' }} />
+            </a>
+          </li>
+          <li className="nav-link">
+            <a href="mailto:ingland.eric@gmail.com">
+              <FontAwesomeIcon icon="envelope" style={{ color: '#000000' }} />
             </a>
           </li>
         </ul>
