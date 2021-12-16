@@ -8,7 +8,7 @@ tags:
   - NTFS
 ---
 
-Uses NTFSSecurity Module available from https://ntfssecurity.readthedocs.io/en/latest/
+Uses NTFSSecurity Module available from <https://ntfssecurity.readthedocs.io/en/latest/>
 
 ### **Add NTFS Permissions to Subfolder**
 

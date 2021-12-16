@@ -9,7 +9,7 @@ tags:
 ---
 I replaced my keyboard a couple of weeks ago to one without media keys and had a need to add them back with a script. For this purpose I decided to finally give AutoHotkey a chance. On the AutoHotkey Script Showcase I saw an existing script for volume shortcuts but it created a redundant on screen volume indicator so I decided it was time to write a simpler version. I use the on screen volume indicator that is built into Windows instead of creating an additional implementation. I also needed to avoid using shortcuts that were already in use so I made them require pressing Ctrl which is in many of the example scripts for AutoHotkey.
 
-## The shortcut keys in the script:
+## The shortcut keys in the script
 
   1. **Ctrl + F10** &#8211; Toggle Volume Mute
   2. **Ctrl + F11** &#8211; Volume Down
@@ -19,7 +19,7 @@ I replaced my keyboard a couple of weeks ago to one without media keys and had a
 
 This script works the same as the Volume Mute, Volume Down and Volume Up keys on a media keyboard.
 
-```
+```ahk
 ^F10::Volume_Down
 ^F11::Volume_Up
 ^F12::Volume_Mute

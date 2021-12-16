@@ -8,9 +8,10 @@ tags:
   - ASP.NET Core
 ---
 
-As a training exercise I referenced https://github.com/karan/Projects and started a project to create a web service to look up the country from an IP address with .NET Core. I used the DB-IP downloadable CSV for IP ranges and the associated countries. The code took a single night to write and consists of only a couple functions to process the table and return the country.
+As a training exercise I referenced <https://github.com/karan/Projects> and started a project to create a web service to look up the country from an IP address with .NET Core. I used the DB-IP downloadable CSV for IP ranges and the associated countries. The code took a single night to write and consists of only a couple functions to process the table and return the country.
 
 I Parse the CSV and do an inline comparison with the submitted IP and the ranges in each row of the CSV with Linq syntax.
+
 ```cs
 var uintaddress = ConvertIPToUint(address);
 var lines = System.IO.File.ReadAllLines(Path
@@ -25,6 +26,7 @@ IP.CountryCode = code.First().Replace("\"", "");
 ```
 
 Each comparison is performed by calculating an integer to represent each IP address and comparing them to a precalculated integer for the input value. The integer is calculated by the function below.
+
 ```cs
 static public uint ConvertIPToUint(string ipAddress)
 {
@@ -37,12 +39,13 @@ static public uint ConvertIPToUint(string ipAddress)
     return ipInUint;
 }
 ```
+
 It takes only 150ms on average to parse all 672,917 rows in the CSV and return the country.
 
 The Web UI is a simple submission box with input validation both server and client side. You can see it on the demo below and the source is published to GitHub.
 
 Live Demo
-https://countryiplookup.azurewebsites.net
+<https://countryiplookup.azurewebsites.net>
 
 Full Source Code
-https://github.com/eingland/CountryIPLookup
+<https://github.com/eingland/CountryIPLookup>
