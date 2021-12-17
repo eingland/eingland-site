@@ -27,20 +27,25 @@ export default function Home({
               I love all things computer science.
               Please have a look at my projects on <a href="http://github.com/eingland">Github</a>.</p>
         <p>Contact me at on <a href="http://linkedin.com/in/ericingland">LinkedIn</a> or by <a href="mailto:ingland.eric@gmail.com">Email</a>.</p>
-        <ul style={{ display: 'flex', flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-          <li className="nav-link">
+        <ul className={utilStyles.socialsNav}>
+          <li className={utilStyles.socialsNav}>
             <a href="http://github.com/eingland">
               <FontAwesomeIcon icon={['fab', 'github']} style={{ color: '#000000' }} />
             </a>
           </li>
-          <li className="nav-link">
+          <li className={utilStyles.socialsNav}>
             <a href="http://linkedin.com/in/ericingland">
               <FontAwesomeIcon icon={['fab', 'linkedin']} style={{ color: '#000000' }} />
             </a>
           </li>
-          <li className="nav-link">
+          <li className={utilStyles.socialsNav}>
             <a href="mailto:ingland.eric@gmail.com">
               <FontAwesomeIcon icon="envelope" style={{ color: '#000000' }} />
+            </a>
+          </li>
+          <li className={utilStyles.socialsNav}>
+            <a href="https://twitter.com/ericingland">
+              <FontAwesomeIcon icon={['fab', 'twitter']} style={{ color: '#000000' }} />
             </a>
           </li>
         </ul>

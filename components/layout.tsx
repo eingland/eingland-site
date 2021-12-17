@@ -4,13 +4,6 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import 'bootstrap/dist/css/bootstrap.min.css'
-
-library.add(fab, faEnvelope)
-
 const name = 'Eric Ingland'
 export const siteTitle = 'Eric Ingland Website'
 
@@ -28,7 +21,7 @@ export default function Layout({
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Personal blog site made using next.js"
         />
         <meta
           property="og:image"
