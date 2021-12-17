@@ -20,7 +20,8 @@ export default function Layout({
 }: {
   children: React.ReactNode
   home?: boolean
-}) {
+}) 
+ {
   return (
     <div className={styles.container}>
       <Head>
