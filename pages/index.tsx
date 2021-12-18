@@ -22,30 +22,26 @@ export default function Home({
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-      <h1>👋 Hi, I'm Eric Ingland!</h1>
-        <p>I'm a <b>DevOps Engineer</b>.
-              I love all things computer science.
-              Please have a look at my projects on <a href="http://github.com/eingland">Github</a>.</p>
-        <p>Contact me at on <a href="http://linkedin.com/in/ericingland">LinkedIn</a> or by <a href="mailto:ingland.eric@gmail.com">Email</a>.</p>
+      <h1>Hi, I'm a <b>DevOps Engineer</b>.</h1>
+        <p>I work with clients to provide IT infrasturcture support (Azure, AWS, Linux, Windows) with over 7 years of experience. I have a background in DevOps, web applications, databases, and IT Support.</p>
+              
+        <p>Please contact me on <a href="http://linkedin.com/in/ericingland">LinkedIn</a> or by <a href="mailto:ingland.eric@gmail.com">Email</a>.</p> 
+        <p>I have personal development projects on my <a href="http://github.com/eingland">Github</a>.</p>
+
         <ul className={utilStyles.socialsNav}>
-          <li className={utilStyles.socialsNav}>
-            <a href="http://github.com/eingland">
-              <FontAwesomeIcon icon={['fab', 'github']} style={{ color: '#000000' }} />
-            </a>
-          </li>
-          <li className={utilStyles.socialsNav}>
+          <li className={utilStyles.socialsNavLink}>
             <a href="http://linkedin.com/in/ericingland">
               <FontAwesomeIcon icon={['fab', 'linkedin']} style={{ color: '#000000' }} />
             </a>
           </li>
-          <li className={utilStyles.socialsNav}>
+          <li className={utilStyles.socialsNavLink}>
             <a href="mailto:ingland.eric@gmail.com">
               <FontAwesomeIcon icon="envelope" style={{ color: '#000000' }} />
             </a>
           </li>
-          <li className={utilStyles.socialsNav}>
-            <a href="https://twitter.com/ericingland">
-              <FontAwesomeIcon icon={['fab', 'twitter']} style={{ color: '#000000' }} />
+          <li className={utilStyles.socialsNavLink}>
+            <a href="http://github.com/eingland">
+              <FontAwesomeIcon icon={['fab', 'github']} style={{ color: '#000000' }} />
             </a>
           </li>
         </ul>

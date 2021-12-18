@@ -5,7 +5,7 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
 const name = 'Eric Ingland'
-export const siteTitle = 'Eric Ingland Website'
+export const siteTitle = 'Eric Ingland - DevOps Engineer'
 
 export default function Layout({
   children,
@@ -39,8 +39,8 @@ export default function Layout({
               priority
               src="/images/profile.jpg"
               className={utilStyles.borderCircle}
-              height={144}
-              width={144}
+              height={256}
+              width={256}
               alt={name}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>

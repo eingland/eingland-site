@@ -51,16 +51,17 @@
   color: #666;
 }
 
-.socialsNav ul{
+.socialsNav{
   display: flex;
   justify-content: center;
   text-align: center;
+  padding-left: 0;
   padding: 0;
+  margin: 0;
 }
 
-.socialsNav li {
+.socialsNavLink {
   display:inline-block;
-  width: 25%;
-  height: 100px;
+  width: 12%;
   padding: 10px;
 }
