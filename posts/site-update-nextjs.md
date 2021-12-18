@@ -1,6 +1,14 @@
-# Eric Ingland - DevOps Engineer
+---
+title: 'Site Update Next.js'
+date: '2021-12-18'
+tags:
+  - Development
+  - Typescript
+  - Blog
+  - Next.js
+---
 
-## Personal blog and portfolio site using Next.js
+I have updated this site to a new version using Next.js. The repo is available at <https://github.com/eingland/eingland-site>.
 
 The site has the following features.
 
