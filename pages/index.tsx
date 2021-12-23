@@ -23,7 +23,7 @@ export default function Home({
       </Head>
       <section className={utilStyles.headingMd}>
         <h1>
-          Hi, I'm a <b>DevOps Engineer</b>.
+          Hi, I&apos;m a <b>DevOps Engineer</b>.
         </h1>
         <p>
           I work with clients to provide IT infrastructure support (Azure, AWS,
