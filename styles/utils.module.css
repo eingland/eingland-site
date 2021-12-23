@@ -51,7 +51,7 @@
   color: #666;
 }
 
-.socialsNav{
+.socialsNav {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -61,7 +61,7 @@
 }
 
 .socialsNavLink {
-  display:inline-block;
+  display: inline-block;
   width: 12%;
   padding: 10px;
 }

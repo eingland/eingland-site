@@ -1,6 +1,6 @@
 ---
-title: 'How to Add NTFS Permission to Subfolders of Directory with PowerShell'
-date: '2018-05-27'
+title: "How to Add NTFS Permission to Subfolders of Directory with PowerShell"
+date: "2018-05-27"
 tags:
   - Development
   - PowerShell

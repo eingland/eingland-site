@@ -1,19 +1,19 @@
-import Layout from '../../components/layout'
-import { getAllPostIds, getPostData } from '../../lib/posts'
-import Head from 'next/head'
-import Date from '../../components/date'
-import utilStyles from '../../styles/utils.module.css'
-import { GetStaticProps, GetStaticPaths } from 'next'
+import Layout from "../../components/layout";
+import { getAllPostIds, getPostData } from "../../lib/posts";
+import Head from "next/head";
+import Date from "../../components/date";
+import utilStyles from "../../styles/utils.module.css";
+import { GetStaticProps, GetStaticPaths } from "next";
 
 export default function Post({
-  postData
+  postData,
 }: {
   postData: {
-    title: string
-    date: string
-    contentHtml: string
-    tags: string[]
-  }
+    title: string;
+    date: string;
+    contentHtml: string;
+    tags: string[];
+  };
 }) {
   return (
     <Layout>
@@ -26,28 +26,28 @@ export default function Post({
           <Date dateString={postData.date} />
         </div>
         <div className={utilStyles.lightText}>
-          {postData.tags.map(tag => tag).join(', ')}
+          {postData.tags.map((tag) => tag).join(", ")}
         </div>
         <br />
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
     </Layout>
-  )
+  );
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = getAllPostIds()
+  const paths = getAllPostIds();
   return {
     paths,
-    fallback: false
-  }
-}
+    fallback: false,
+  };
+};
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const postData = await getPostData(params.id as string)
+  const postData = await getPostData(params.id as string);
   return {
     props: {
-      postData
-    }
-  }
-}
+      postData,
+    },
+  };
+};

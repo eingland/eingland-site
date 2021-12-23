@@ -1,6 +1,6 @@
 ---
-title: 'Site Update Next.js'
-date: '2021-12-18'
+title: "Site Update Next.js"
+date: "2021-12-18"
 tags:
   - Development
   - Typescript
