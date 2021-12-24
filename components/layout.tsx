@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
-import Link from "next/link";
+import { Link } from "@chakra-ui/react";
 
 const name = "Eric Ingland";
 export const siteTitle = "Eric Ingland - DevOps Engineer";
@@ -46,7 +46,7 @@ export default function Layout({
           </>
         ) : (
           <>
-            <Link href="/">
+            <Link color='blue.500' href="/">
               <a>
                 <Image
                   priority
@@ -69,7 +69,7 @@ export default function Layout({
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
-          <Link href="/">
+          <Link color='teal.500' href="/">
             <a>← Back to home</a>
           </Link>
         </div>

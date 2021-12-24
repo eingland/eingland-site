@@ -21,6 +21,6 @@ Packages used
 - [Prism](https://prismjs.com/)
 - [gray-matter](https://github.com/jonschlinkert/gray-matter)
 - [remark](https://github.com/remarkjs/remark)
-- [eslint](https://github.com/eslint/eslint)
+- [ESLint](https://github.com/eslint/eslint)
 - [react-ga4](https://github.com/PriceRunner/react-ga4)
 - [react-bootstrap](https://github.com/react-bootstrap/react-bootstrap)

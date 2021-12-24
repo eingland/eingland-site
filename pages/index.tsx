@@ -1,21 +1,11 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
-import { getSortedPostsData } from "../lib/posts";
-import Link from "next/link";
-import Date from "../components/date";
-import { GetStaticProps } from "next";
+import { Link } from "@chakra-ui/react";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function Home({
-  allPostsData,
-}: {
-  allPostsData: {
-    date: string;
-    title: string;
-    id: string;
-  }[];
-}) {
+export default function Home() {
   return (
     <Layout home>
       <Head>
@@ -33,63 +23,38 @@ export default function Home({
 
         <p>
           Please contact me on{" "}
-          <a href="http://linkedin.com/in/ericingland">LinkedIn</a> or by{" "}
-          <a href="mailto:ingland.eric@gmail.com">Email</a>.
+          <Link color='blue.500' href="http://linkedin.com/in/ericingland" >LinkedIn</Link> or by{" "}
+          <Link color='blue.500' href="mailto:ingland.eric@gmail.com">Email</Link>.
         </p>
         <p>
           I have personal development projects on my{" "}
-          <a href="http://github.com/eingland">Github</a>.
+          <Link color='blue.500' href="http://github.com/eingland">Github</Link>.
         </p>
 
         <ul className={utilStyles.socialsNav}>
           <li className={utilStyles.socialsNavLink}>
-            <a href="http://linkedin.com/in/ericingland">
+            <Link href="http://linkedin.com/in/ericingland">
               <FontAwesomeIcon
                 icon={["fab", "linkedin"]}
                 style={{ color: "#000000" }}
               />
-            </a>
+            </Link>
           </li>
           <li className={utilStyles.socialsNavLink}>
-            <a href="mailto:ingland.eric@gmail.com">
+            <Link href="mailto:ingland.eric@gmail.com">
               <FontAwesomeIcon icon="envelope" style={{ color: "#000000" }} />
-            </a>
+            </Link>
           </li>
           <li className={utilStyles.socialsNavLink}>
-            <a href="http://github.com/eingland">
+            <Link href="http://github.com/eingland">
               <FontAwesomeIcon
                 icon={["fab", "github"]}
                 style={{ color: "#000000" }}
               />
-            </a>
+            </Link>
           </li>
-        </ul>
-      </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
         </ul>
       </section>
     </Layout>
   );
 }
-
-export const getStaticProps: GetStaticProps = async () => {
-  const allPostsData = getSortedPostsData();
-  return {
-    props: {
-      allPostsData,
-    },
-  };
-};
