@@ -10,7 +10,7 @@ tags:
 
 As a training exercise I referenced <https://github.com/karan/Projects> and started a project to create a web service to look up the country from an IP address with .NET Core. I used the DB-IP downloadable CSV for IP ranges and the associated countries. The code took a single night to write and consists of only a couple functions to process the table and return the country.
 
-I Parse the CSV and do an inline comparison with the submitted IP and the ranges in each row of the CSV with Linq syntax.
+I Parse the CSV and do an inline comparison with the submitted IP and the ranges in each row of the CSV with LINQ syntax.
 
 ```cs
 var uintaddress = ConvertIPToUint(address);

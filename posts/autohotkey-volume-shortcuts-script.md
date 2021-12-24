@@ -29,5 +29,3 @@ This script works the same as the Volume Mute, Volume Down and Volume Up keys on
 ## How to Use
 
 To use the script download extract and run with AutoHotkey. Also to make these shortcuts work automatically I put it in the **C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp** folder and let it run on every startup. This path is the all users startup folder on Windows 8 and 10 so if running another platform you may need to look up the appropriate path. Make sure to install AutoHotkey before putting the script into the startup folder.
-
-&nbsp;
