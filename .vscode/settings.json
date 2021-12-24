@@ -2,10 +2,12 @@
     "spellright.language": [
         "en"
     ],
-    "spellright.documentTypes": [
-        "markdown",
-        "latex",
-        "plaintext",
-        "typescriptreact"
-    ]
+    "spellright.spellContext": "body comments strings",
+    "spellright.spellContextByClass": {
+        "markdown": "body",
+        "typescript": "comments",
+        "json": "comments",
+        "html": "body",
+        "typescriptreact": "body comments strings",
+    },
 }
