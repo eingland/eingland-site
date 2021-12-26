@@ -6,9 +6,9 @@ const Navbar = () => {
         <div >
             <Link href="/" m={2}>Home</Link>
             <Link href="/blog" m={2}>Blog</Link>
-            <Button onClick={toggleColorMode} m={2}>
+            {/* <Button onClick={toggleColorMode} m={2}>
             Toggle {colorMode === 'light' ? 'Dark' : 'Light'}
-            </Button>
+            </Button> */}
         </div>
     );
 };
