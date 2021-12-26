@@ -3,6 +3,9 @@ import Image from "next/image";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import { Link } from "@chakra-ui/react";
+import { ColorModeScript } from '@chakra-ui/react'
+import theme from './theme'
+import Navbar from "./navbar";
 
 const name = "Eric Ingland";
 export const siteTitle = "Eric Ingland - DevOps Engineer";
@@ -31,6 +34,8 @@ export default function Layout({
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
+      <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+      <Navbar />
       <header className={styles.header}>
         {home ? (
           <>
@@ -69,7 +74,7 @@ export default function Layout({
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
-          <Link color='teal.500' href="/">
+          <Link color='blue.500' href="/">
             <a>← Back to home</a>
           </Link>
         </div>

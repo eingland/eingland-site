@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
-import { Link } from "@chakra-ui/react";
+import { Link, Text } from "@chakra-ui/react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -15,21 +15,21 @@ export default function Home() {
         <h1>
           Hi, I&apos;m a <b>DevOps Engineer</b>.
         </h1>
-        <p>
+        <Text>
           I work with clients to provide IT infrastructure support (Azure, AWS,
           Linux, Windows) with over 7 years of experience. I have a background
           in DevOps, web applications, databases, and IT Support.
-        </p>
+        </Text>
 
-        <p>
+        <Text>
           Please contact me on{" "}
           <Link color='blue.500' href="http://linkedin.com/in/ericingland" >LinkedIn</Link> or by{" "}
           <Link color='blue.500' href="mailto:ingland.eric@gmail.com">Email</Link>.
-        </p>
-        <p>
+        </Text>
+        <Text>
           I have personal development projects on my{" "}
           <Link color='blue.500' href="http://github.com/eingland">Github</Link>.
-        </p>
+        </Text>
 
         <ul className={utilStyles.socialsNav}>
           <li className={utilStyles.socialsNavLink}>
