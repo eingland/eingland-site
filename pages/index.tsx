@@ -1,7 +1,9 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
-import { Link, Text } from "@chakra-ui/react";
+import { Button, HStack, Link, Text } from "@chakra-ui/react";
+import {FaLinkedin, FaGithub, FaEnvelope} from "react-icons/fa"
+
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -31,29 +33,23 @@ export default function Home() {
           <Link color='blue.500' href="http://github.com/eingland">Github</Link>.
         </Text>
 
-        <ul className={utilStyles.socialsNav}>
-          <li className={utilStyles.socialsNavLink}>
-            <Link href="http://linkedin.com/in/ericingland">
-              <FontAwesomeIcon
-                icon={["fab", "linkedin"]}
-                style={{ color: "#000000" }}
-              />
-            </Link>
-          </li>
-          <li className={utilStyles.socialsNavLink}>
-            <Link href="mailto:ingland.eric@gmail.com">
-              <FontAwesomeIcon icon="envelope" style={{ color: "#000000" }} />
-            </Link>
-          </li>
-          <li className={utilStyles.socialsNavLink}>
-            <Link href="http://github.com/eingland">
-              <FontAwesomeIcon
-                icon={["fab", "github"]}
-                style={{ color: "#000000" }}
-              />
-            </Link>
-          </li>
-        </ul>
+        <HStack>
+          <Link href="http://linkedin.com/in/ericingland"> 
+            <Button colorScheme='linkedin' leftIcon={<FaLinkedin />}>
+              Linkedin
+            </Button>
+          </Link>
+          <Link href="mailto:ingland.eric@gmail.com">
+            <Button colorScheme='blue' leftIcon={<FaEnvelope />}>
+              Email
+            </Button>
+          </Link>
+          <Link href="http://github.com/eingland">
+            <Button colorScheme='gray' leftIcon={<FaGithub />}>
+                Github
+            </Button>
+          </Link>
+        </HStack>
       </section>
     </Layout>
   );
