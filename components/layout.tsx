@@ -3,8 +3,6 @@ import Image from "next/image";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import { Link } from "@chakra-ui/react";
-import { ColorModeScript } from '@chakra-ui/react'
-import theme from './theme'
 import Navbar from "./navbar";
 
 const name = "Eric Ingland";
@@ -34,7 +32,6 @@ export default function Layout({
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <ColorModeScript initialColorMode={theme.config.initialColorMode} />
       <Navbar />
       <header className={styles.header}>
         {home ? (
