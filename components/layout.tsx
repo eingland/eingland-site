@@ -48,7 +48,7 @@ export default function Layout({
           </>
         ) : (
           <>
-            <Link color='blue.500' href="/">
+            <Link href="/">
               <a>
                 <Image
                   priority
@@ -71,7 +71,7 @@ export default function Layout({
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
-          <Link color='blue.500' href="/">
+          <Link href="/">
             <a>← Back to home</a>
           </Link>
         </div>

@@ -22,12 +22,12 @@ export default function Home() {
 
         <Text>
           Please contact me on{" "}
-          <Link color='blue.500' href="http://linkedin.com/in/ericingland" >LinkedIn</Link> or by{" "}
-          <Link color='blue.500' href="mailto:ingland.eric@gmail.com">Email</Link>.
+          <Link  href="http://linkedin.com/in/ericingland" >LinkedIn</Link> or by{" "}
+          <Link  href="mailto:ingland.eric@gmail.com">Email</Link>.
         </Text>
         <Text>
           I have personal development projects on my{" "}
-          <Link color='blue.500' href="http://github.com/eingland">Github</Link>.
+          <Link  href="http://github.com/eingland">Github</Link>.
         </Text>
 
         <HStack>
