@@ -4,6 +4,9 @@ import Head from "next/head";
 import Date from "../../components/date";
 import utilStyles from "../../styles/utils.module.css";
 import { GetStaticProps, GetStaticPaths } from "next";
+import ReactMarkdown from 'react-markdown'
+import ChakraUIRenderer from "chakra-ui-markdown-renderer";
+import theme from "../../components/theme";
 
 export default function Post({
   postData,
@@ -29,7 +32,7 @@ export default function Post({
           {postData.tags.map((tag) => tag).join(", ")}
         </div>
         <br />
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <ReactMarkdown components={ChakraUIRenderer(theme)}>{postData.contentHtml}</ReactMarkdown>
       </article>
     </Layout>
   );
