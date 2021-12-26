@@ -4,9 +4,6 @@ import utilStyles from "../styles/utils.module.css";
 import { Button, HStack, Link, Text } from "@chakra-ui/react";
 import {FaLinkedin, FaGithub, FaEnvelope} from "react-icons/fa"
 
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 export default function Home() {
   return (
     <Layout home>
