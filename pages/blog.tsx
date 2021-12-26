@@ -6,6 +6,7 @@ import Date from "../components/date";
 import { GetStaticProps } from "next";
 import { getSortedPostsData } from "../lib/posts";
 import { Link } from "@chakra-ui/react";
+import NextLink from 'next/link'
 
 export default function Home({
   allPostsData,
@@ -27,9 +28,11 @@ export default function Home({
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                {title}
-              </Link>
+              <NextLink href={`/posts/${id}`} passHref>
+                <Link>
+                  {title}
+                </Link>
+              </NextLink>
               <br />
               <small className={utilStyles.lightText}>
                 <Date dateString={date} />

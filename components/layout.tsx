@@ -4,9 +4,23 @@ import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import { Heading, Link } from "@chakra-ui/react";
 import Navbar from "./navbar";
+import NextLink from 'next/link'
+import { motion } from "framer-motion";
 
 const name = "Eric Ingland";
 export const siteTitle = "Eric Ingland - DevOps Engineer";
+
+const pageVariants = {
+  initial: {
+    opacity: 0,
+  },
+  in: {
+    opacity: 1,
+  },
+  out: {
+    opacity: 0,
+  },
+}
 
 export default function Layout({
   children,
@@ -40,8 +54,8 @@ export default function Layout({
               priority
               src="/images/profile.jpg"
               className={utilStyles.borderCircle}
-              height={256}
-              width={256}
+              height={184}
+              width={184}
               alt={name}
             />
             <Heading className={utilStyles.heading2Xl}>{name}</Heading>
@@ -61,17 +75,26 @@ export default function Layout({
               </a>
             </Link>
             <Heading as="h2" className={utilStyles.headingLg}>
-              <a className={utilStyles.colorInherit}>{name}</a>
+              {name}
             </Heading>
           </>
         )}
       </header>
-      <main>{children}</main>
+      <motion.div
+        initial="initial"
+        animate="in"
+        exit="out"
+        variants={pageVariants}
+      >
+        <main>{children}</main>
+      </motion.div>
       {!home && (
         <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
+          <NextLink href={'/'} passHref>
+            <Link>
+              ← Back to home
+            </Link>
+          </NextLink>
         </div>
       )}
     </div>
