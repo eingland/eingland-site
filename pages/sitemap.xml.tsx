@@ -7,6 +7,9 @@ function generateSiteMap(posts) {
      <url>
        <loc>https://www.ericingland.com</loc>
      </url>
+     <url>
+       <loc>https://www.ericingland.com/blog</loc>
+     </url>
      ${posts}
    </urlset>
  `;

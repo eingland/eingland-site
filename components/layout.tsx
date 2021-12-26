@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
-import { Link } from "@chakra-ui/react";
+import { Heading, Link } from "@chakra-ui/react";
 import Navbar from "./navbar";
 
 const name = "Eric Ingland";
@@ -44,7 +44,7 @@ export default function Layout({
               width={256}
               alt={name}
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <Heading className={utilStyles.heading2Xl}>{name}</Heading>
           </>
         ) : (
           <>
@@ -60,11 +60,9 @@ export default function Layout({
                 />
               </a>
             </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
+            <Heading as="h2" className={utilStyles.headingLg}>
+              <a className={utilStyles.colorInherit}>{name}</a>
+            </Heading>
           </>
         )}
       </header>

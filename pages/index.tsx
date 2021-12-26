@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
-import { Button, HStack, Link, Text } from "@chakra-ui/react";
+import { Button, Heading, HStack, Link, Text } from "@chakra-ui/react";
 import {FaLinkedin, FaGithub, FaEnvelope} from "react-icons/fa"
 
 export default function Home() {
@@ -11,9 +11,9 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <h1>
-          Hi, I&apos;m a <b>DevOps Engineer</b>.
-        </h1>
+        <Heading>
+          Hi, I&apos;m a <i>DevOps Engineer</i>.
+        </Heading>
         <Text>
           I work with clients to provide IT infrastructure support (Azure, AWS,
           Linux, Windows) with over 7 years of experience. I have a background
@@ -26,9 +26,11 @@ export default function Home() {
           <Link  href="mailto:ingland.eric@gmail.com">Email</Link>.
         </Text>
         <Text>
-          I have personal development projects on my{" "}
+          I have personal development projects on{" "}
           <Link  href="http://github.com/eingland">Github</Link>.
         </Text>
+
+        <Heading as='h2' p={2} size='md'>On the web</Heading>
 
         <HStack>
           <Link href="http://linkedin.com/in/ericingland"> 

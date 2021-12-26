@@ -1,5 +1,4 @@
 import { AppProps } from "next/app";
-import "prismjs/themes/prism-coy.css";
 import ReactGA from "react-ga4";
 
 import { ChakraProvider } from "@chakra-ui/react";
